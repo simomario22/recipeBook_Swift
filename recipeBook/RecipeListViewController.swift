@@ -74,14 +74,21 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
     
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCellID", for:indexPath)
         
-        var recipeLabel: UILabel = cell.viewWithTag(99) as! UILabel
+        let recipeLabel: UILabel = cell.viewWithTag(99) as! UILabel
         recipeLabel.text = recipeArray[indexPath.row].title
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("did select a recipe")
+        
+        let selectedRecipe: Recipe = self.recipeArray[indexPath.row]
+        print("selectedRecipe = \(selectedRecipe.title)")
+        
+        let detailVC: RecipeDetailViewController = RecipeDetailViewController()
+        detailVC.shownRecipe = selectedRecipe
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 
 }
