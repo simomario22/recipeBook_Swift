@@ -17,6 +17,9 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //title
+        self.navigationItem.title = "Recipes"
+        
         // Do any additional setup after loading the view.
         self.recipeTableView.dataSource = self
         self.recipeTableView.delegate = self
