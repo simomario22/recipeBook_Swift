@@ -54,7 +54,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aji-Lc-hOs">
-                                                    <rect key="frame" x="28" y="12" width="300" height="21"/>
+                                                    <rect key="frame" x="28" y="12" width="319" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                                                 <constraint firstItem="Aji-Lc-hOs" firstAttribute="centerY" secondItem="0Jk-Wu-g8C" secondAttribute="centerY" id="3DL-F5-Cyt"/>
                                                 <constraint firstItem="Aji-Lc-hOs" firstAttribute="top" secondItem="0Jk-Wu-g8C" secondAttribute="topMargin" constant="4" id="6BO-GQ-Wvb"/>
                                                 <constraint firstItem="Aji-Lc-hOs" firstAttribute="leading" secondItem="0Jk-Wu-g8C" secondAttribute="leadingMargin" constant="20" id="aPg-EJ-AZY"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Aji-Lc-hOs" secondAttribute="trailing" constant="39" id="guC-zC-zPp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Aji-Lc-hOs" secondAttribute="trailing" constant="20" id="guC-zC-zPp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
