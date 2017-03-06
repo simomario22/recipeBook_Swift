@@ -38,6 +38,17 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //make sure the size of the title is the same every time the table view appears
+        let attrs = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 36)!
+        ]
+        self.navigationController?.navigationBar.titleTextAttributes = attrs
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
