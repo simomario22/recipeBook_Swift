@@ -145,7 +145,7 @@ class NetworkingManager: NSObject {
         
         updatedRecipe.id = jsonDict["id"]!.stringValue as String
         updatedRecipe.title = jsonDict["title"] as! String
-        updatedRecipe.rating = jsonDict["rating"]!.stringValue as String
+        updatedRecipe.rating = jsonDict["rating"] as! Int
         updatedRecipe.imageURL = jsonDict["image"] as! String
         updatedRecipe.instructions = jsonDict["instructions"] as! String
         

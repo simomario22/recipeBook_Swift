@@ -13,7 +13,7 @@ class RecipeDetailViewController: UIViewController {
     public var shownRecipe: Recipe? = nil
     
     @IBOutlet weak var recipeImage: UIImageView!
-    @IBOutlet weak var recipeRating: UILabel!
+    @IBOutlet weak var ratingStackView: UIStackView!
     @IBOutlet weak var recipeInstructions: UITextView!
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class RecipeDetailViewController: UIViewController {
             self.navigationController?.navigationBar.titleTextAttributes = attrs
             
             if recipe.imageURL != ""{
-                self.recipeRating.text = recipe.rating
+                //self.recipeRating.text = recipe.rating
                 self.recipeInstructions.text = recipe.instructions
                 
             } else {
@@ -42,7 +42,24 @@ class RecipeDetailViewController: UIViewController {
                     print("here is my updated Recipe")
                     
                     self?.shownRecipe = updatedRecipe
-                    self?.recipeRating.text = self?.shownRecipe?.rating
+
+                    
+                    if let numStars = self?.shownRecipe?.rating{
+                        //sanity check to make sure rating is 1 or higher
+                        if (numStars >= 1){
+                            //this implementation relies on the fact that the imageViews inside
+                            //the horizontal stackview are given tag values of 1 through 5 when
+                            //looking at the image views from left to right (left-most view is 
+                            //tagged 1, right most view is tagged 5).
+                            for i in 1 ... numStars{
+                                let currentStarImageView = self?.ratingStackView.viewWithTag(i) as? UIImageView
+                                
+                                //assign the fill_star.png icon as the image value
+                                currentStarImageView!.image = #imageLiteral(resourceName: "fill_star.png")
+                            }
+                        }
+                    }
+                    
                     self?.recipeInstructions.text = self?.shownRecipe?.instructions
                     
                     //download the recipe image if there is one
