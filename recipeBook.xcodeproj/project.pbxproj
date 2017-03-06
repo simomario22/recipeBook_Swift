@@ -88,7 +88,6 @@
 				1D1F28CB1E6CDC7F0086E72A /* Networking */,
 				1D1F28CC1E6CDC870086E72A /* Model */,
 				1D1F28B91E6CDC720086E72A /* AppDelegate.swift */,
-				1D1F28BD1E6CDC720086E72A /* Main.storyboard */,
 				1D1F28C01E6CDC720086E72A /* Assets.xcassets */,
 				1D29B2B31E6D367E000B496D /* Images */,
 				1D1F28C21E6CDC720086E72A /* LaunchScreen.storyboard */,
@@ -121,6 +120,7 @@
 				1D1F28D41E6CE42E0086E72A /* RecipeListViewController.swift */,
 				1D1F28D61E6CE8630086E72A /* RecipeDetailViewController.swift */,
 				1D1F28D71E6CE8630086E72A /* RecipeDetailViewController.xib */,
+				1D1F28BD1E6CDC720086E72A /* Main.storyboard */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

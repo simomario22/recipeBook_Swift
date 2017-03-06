@@ -107,13 +107,37 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         
         let selectedRecipe: Recipe = self.recipeArray[indexPath.row]
         
-        //DEBUG CODE
-        //print("selectedRecipe = \(selectedRecipe.title)")
+        //if imageURL string is not empty then assume the service call
+        //for the recipe details has already been done before
+        if selectedRecipe.imageURL != ""{
+            
+            //immediately push the detail view controller with the recipe object
+            //since we know that the recipe model is populated with details
+            let detailVC: RecipeDetailViewController = RecipeDetailViewController()
+            detailVC.shownRecipe = selectedRecipe
+            self.navigationController?.pushViewController(detailVC, animated: true)
         
-        let detailVC: RecipeDetailViewController = RecipeDetailViewController()
-        detailVC.shownRecipe = selectedRecipe
+        } else {
+            
+            //TODO: - think about showing an activity indicator here 
+            //while the service call for the details is running
+            
+            //completion handler after retrieving recipe details
+            let populateRecipeDetailsCompletionHandler: (Recipe) -> Void = {[weak self] (updatedRecipe:Recipe) -> Void  in
+                
+                //update the element in the recipe array with an updated recipe model object
+                self?.recipeArray[indexPath.row] = updatedRecipe
+                
+                //now push the detail view controller with the updated recipe object
+                let detailVC: RecipeDetailViewController = RecipeDetailViewController()
+                detailVC.shownRecipe = updatedRecipe
+                self?.navigationController?.pushViewController(detailVC, animated: true)
+            }
+            
+            //perform actual service call for retrieving recipe details
+            NetworkingManager.populateRecipeDetails(recipe: selectedRecipe, completionHandler: populateRecipeDetailsCompletionHandler)
+        }
         
-        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 
 }
