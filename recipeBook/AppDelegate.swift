@@ -20,11 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let mainViewController: RecipeListViewController = storyBoard.instantiateViewController(withIdentifier: "RecipeListViewControllerID") as! RecipeListViewController
         
+        mainViewController.navigationItem.title = "Recipes"
+        
         let navigationController: UINavigationController = UINavigationController.init(rootViewController: mainViewController)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
-        
+
         return true
     }
 
