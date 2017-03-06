@@ -42,6 +42,11 @@ class RecipeDetailViewController: UIViewController {
                     self?.recipeRating.text = self?.shownRecipe?.rating
                     self?.recipeInstructions.text = self?.shownRecipe?.instructions
                     
+                    //download the recipe image if there is one
+                    if let imageURLString = self?.shownRecipe?.imageURL{
+                        self?.recipeImage.downloadImageFromNetworkAtURL(url: imageURLString)
+                    }
+                    
                 }
                 NetworkingManager.populateRecipeDetails(recipe: self.shownRecipe!, completionHandler: populateRecipeDetailsCompletionHandler)
                 

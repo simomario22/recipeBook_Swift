@@ -17,6 +17,7 @@
 		1D1F28D51E6CE42E0086E72A /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F28D41E6CE42E0086E72A /* RecipeListViewController.swift */; };
 		1D1F28D81E6CE8630086E72A /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F28D61E6CE8630086E72A /* RecipeDetailViewController.swift */; };
 		1D1F28D91E6CE8630086E72A /* RecipeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F28D71E6CE8630086E72A /* RecipeDetailViewController.xib */; };
+		1D1F28DB1E6CF9790086E72A /* UIImageView+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F28DA1E6CF9790086E72A /* UIImageView+Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1D1F28D41E6CE42E0086E72A /* RecipeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		1D1F28D61E6CE8630086E72A /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		1D1F28D71E6CE8630086E72A /* RecipeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeDetailViewController.xib; sourceTree = "<group>"; };
+		1D1F28DA1E6CF9790086E72A /* UIImageView+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Networking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				1D1F28CD1E6CDCA50086E72A /* NetworkingManager.swift */,
+				1D1F28DA1E6CF9790086E72A /* UIImageView+Networking.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				1D1F28BA1E6CDC720086E72A /* AppDelegate.swift in Sources */,
 				1D1F28D81E6CE8630086E72A /* RecipeDetailViewController.swift in Sources */,
 				1D1F28D01E6CDCCA0086E72A /* Recipe.swift in Sources */,
+				1D1F28DB1E6CF9790086E72A /* UIImageView+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +348,7 @@
 				1D1F28CA1E6CDC720086E72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
