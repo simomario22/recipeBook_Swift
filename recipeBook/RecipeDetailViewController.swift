@@ -12,7 +12,6 @@ class RecipeDetailViewController: UIViewController {
 
     public var shownRecipe: Recipe? = nil
     
-    @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeRating: UILabel!
     @IBOutlet weak var recipeInstructions: UITextView!
@@ -23,14 +22,18 @@ class RecipeDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         if let recipe = self.shownRecipe {
+            
             //set the text
-            self.recipeTitle.text = recipe.title
+            self.navigationItem.title = self.shownRecipe?.title
+            let attrs = [
+                NSForegroundColorAttributeName: UIColor.white,
+                NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 18)!
+            ]
+            self.navigationController?.navigationBar.titleTextAttributes = attrs
             
             if recipe.imageURL != ""{
                 self.recipeRating.text = recipe.rating
                 self.recipeInstructions.text = recipe.instructions
-                
-                
                 
             } else {
                 

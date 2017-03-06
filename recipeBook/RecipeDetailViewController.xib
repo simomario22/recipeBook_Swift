@@ -14,7 +14,6 @@
                 <outlet property="recipeImage" destination="b0n-WZ-tA4" id="vsr-ZF-Jge"/>
                 <outlet property="recipeInstructions" destination="aqq-Le-71y" id="Y14-Jj-41W"/>
                 <outlet property="recipeRating" destination="Izy-IY-fhm" id="5Xu-pO-Zpa"/>
-                <outlet property="recipeTitle" destination="GUW-MN-xYo" id="AVj-Yi-XQf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,13 +22,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUW-MN-xYo">
-                    <rect key="frame" x="108" y="87" width="159" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-WZ-tA4">
                     <rect key="frame" x="67" y="112" width="240" height="192"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
