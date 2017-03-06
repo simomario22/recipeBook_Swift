@@ -23,8 +23,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-WZ-tA4">
-                    <rect key="frame" x="0.0" y="62" width="375" height="240"/>
+                    <rect key="frame" x="0.0" y="62" width="375" height="240.5"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izy-IY-fhm">
+                    <rect key="frame" x="166" y="310" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aqq-Le-71y">
                     <rect key="frame" x="20" y="401" width="335" height="200"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,17 +41,57 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izy-IY-fhm">
-                    <rect key="frame" x="166" y="336" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uh9-Bz-dkP">
+                    <rect key="frame" x="62" y="339" width="250" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fill_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1Z-GR-SI1">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="6Ee-2x-Ebs"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fill_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-2N-hny">
+                            <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="DOg-M4-Gue"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fill_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bsq-0X-aLR">
+                            <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="g23-8C-eWT"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fill_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="8A8-vS-rHG">
+                            <rect key="frame" x="150" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="6m5-z3-ySR"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fill_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xec-Cy-7We">
+                            <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="vD9-OS-LNO"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Od1-2N-hny" firstAttribute="leading" secondItem="N1Z-GR-SI1" secondAttribute="trailing" id="2oM-GN-DKQ"/>
+                        <constraint firstItem="Bsq-0X-aLR" firstAttribute="leading" secondItem="Od1-2N-hny" secondAttribute="trailing" id="9w4-6N-M8K"/>
+                        <constraint firstAttribute="width" constant="250" id="CBd-3m-yN4"/>
+                        <constraint firstAttribute="height" constant="50" id="EfT-FZ-ByS"/>
+                        <constraint firstItem="Bsq-0X-aLR" firstAttribute="centerX" secondItem="Uh9-Bz-dkP" secondAttribute="centerX" id="F96-d7-Yhh"/>
+                        <constraint firstItem="Xec-Cy-7We" firstAttribute="leading" secondItem="8A8-vS-rHG" secondAttribute="trailing" id="Tv0-sP-Bxk"/>
+                        <constraint firstItem="8A8-vS-rHG" firstAttribute="leading" secondItem="Bsq-0X-aLR" secondAttribute="trailing" id="tIc-gG-fgr"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Izy-IY-fhm" firstAttribute="top" secondItem="b0n-WZ-tA4" secondAttribute="bottom" constant="34" id="1l4-hS-kEA"/>
                 <constraint firstAttribute="trailing" secondItem="b0n-WZ-tA4" secondAttribute="trailing" id="AYn-as-Izh"/>
+                <constraint firstItem="Uh9-Bz-dkP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DGa-gd-hKh"/>
+                <constraint firstItem="Uh9-Bz-dkP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hh8-ps-Apx"/>
                 <constraint firstAttribute="bottom" secondItem="aqq-Le-71y" secondAttribute="bottom" constant="66" id="PfN-em-187"/>
                 <constraint firstItem="aqq-Le-71y" firstAttribute="top" secondItem="Izy-IY-fhm" secondAttribute="bottom" constant="44" id="RPL-m3-wgL"/>
                 <constraint firstItem="b0n-WZ-tA4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="UWc-lP-cpU"/>
@@ -53,8 +99,12 @@
                 <constraint firstItem="Izy-IY-fhm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cn5-kd-csy"/>
                 <constraint firstItem="b0n-WZ-tA4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jY1-fO-z4L"/>
                 <constraint firstItem="aqq-Le-71y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="njf-aP-gGm"/>
+                <constraint firstItem="aqq-Le-71y" firstAttribute="top" secondItem="Uh9-Bz-dkP" secondAttribute="bottom" constant="12" id="ujf-aw-AcF"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="-203.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="fill_star.png" width="80" height="77"/>
+    </resources>
 </document>
