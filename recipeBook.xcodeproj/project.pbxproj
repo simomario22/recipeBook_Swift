@@ -19,6 +19,9 @@
 		1D1F28D91E6CE8630086E72A /* RecipeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F28D71E6CE8630086E72A /* RecipeDetailViewController.xib */; };
 		1D1F28DB1E6CF9790086E72A /* UIImageView+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F28DA1E6CF9790086E72A /* UIImageView+Networking.swift */; };
 		1D1F28DD1E6CFA9C0086E72A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F28DC1E6CFA9C0086E72A /* ImageCache.swift */; };
+		1D29B2AA1E6D319F000B496D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2A91E6D319F000B496D /* logo.png */; };
+		1D29B2AC1E6D31B5000B496D /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2AB1E6D31B5000B496D /* logo@2x.png */; };
+		1D29B2AE1E6D31BB000B496D /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2AD1E6D31BB000B496D /* logo@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		1D1F28D71E6CE8630086E72A /* RecipeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeDetailViewController.xib; sourceTree = "<group>"; };
 		1D1F28DA1E6CF9790086E72A /* UIImageView+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Networking.swift"; sourceTree = "<group>"; };
 		1D1F28DC1E6CFA9C0086E72A /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1D29B2A91E6D319F000B496D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1D29B2AB1E6D31B5000B496D /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		1D29B2AD1E6D31BB000B496D /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				1D1F28BB1E6CDC720086E72A /* ViewController.swift */,
 				1D1F28BD1E6CDC720086E72A /* Main.storyboard */,
 				1D1F28C01E6CDC720086E72A /* Assets.xcassets */,
+				1D29B2A91E6D319F000B496D /* logo.png */,
+				1D29B2AB1E6D31B5000B496D /* logo@2x.png */,
+				1D29B2AD1E6D31BB000B496D /* logo@3x.png */,
 				1D1F28C21E6CDC720086E72A /* LaunchScreen.storyboard */,
 				1D1F28C51E6CDC720086E72A /* Info.plist */,
 			);
@@ -170,8 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1F28C41E6CDC720086E72A /* LaunchScreen.storyboard in Resources */,
+				1D29B2AC1E6D31B5000B496D /* logo@2x.png in Resources */,
+				1D29B2AA1E6D319F000B496D /* logo.png in Resources */,
 				1D1F28D91E6CE8630086E72A /* RecipeDetailViewController.xib in Resources */,
 				1D1F28C11E6CDC720086E72A /* Assets.xcassets in Resources */,
+				1D29B2AE1E6D31BB000B496D /* logo@3x.png in Resources */,
 				1D1F28BF1E6CDC720086E72A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
