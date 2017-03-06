@@ -16,23 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-//        let mainViewController: RecipeListViewController = storyBoard.instantiateViewController(withIdentifier: "RecipeListViewControllerID") as! RecipeListViewController
-//        mainViewController.navigationItem.title = "Recipes"
-//        
-//        let navigationController: UINavigationController = UINavigationController.init(rootViewController: mainViewController)
-//        navigationController.navigationBar.backgroundColor = UIColor.orange
-//        navigationController.navigationBar.tintColor = UIColor.orange
-//        let attrs = [
-//            NSForegroundColorAttributeName: UIColor.white,
-//            NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 36)!
-//        ]
-//        navigationController.navigationBar.titleTextAttributes = attrs
-//        
-//        self.window?.rootViewController = navigationController
-//        self.window?.makeKeyAndVisible()
-//        
+              
         return true
     }
 
