@@ -31,12 +31,18 @@ class RecipeDetailViewController: UIViewController {
             ]
             self.navigationController?.navigationBar.titleTextAttributes = attrs
             
+            //if imageURL string is not empty then we can assume the service call
+            //for the recipe details has already been done before
             if recipe.imageURL != ""{
-                //self.recipeRating.text = recipe.rating
+                
+                // FIXME: - right now only the image is being cached
+                //would be nice to cache the other detail properties and rely on them here
+                //as it stands right now, this if statement is always false
                 self.recipeInstructions.text = recipe.instructions
                 
             } else {
                 
+                //completion handler after retrieving recipe details
                 let populateRecipeDetailsCompletionHandler: (Recipe) -> Void = {[weak self] (updatedRecipe:Recipe) -> Void  in
                     //do something here
                     print("here is my updated Recipe")
@@ -68,6 +74,8 @@ class RecipeDetailViewController: UIViewController {
                     }
                     
                 }
+                
+                //perform actual service call for retrieving recipe details
                 NetworkingManager.populateRecipeDetails(recipe: self.shownRecipe!, completionHandler: populateRecipeDetailsCompletionHandler)
                 
             }

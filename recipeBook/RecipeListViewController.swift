@@ -26,12 +26,15 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         
         let loadRecipesCompletionHandler: ([Recipe]) -> Void = {[weak self] (recipeArray:[Recipe]) -> Void  in
             //do something here
-            print("here is my completion handler")
             
+            /*
+             DEBUG CODE
+            print("here is my completion handler")
             for recipe in recipeArray{
                 print("currentRecipe.id = \(recipe.id)")
                 print("currentRecipe.title = \(recipe.title)")
             }
+            */
             
             self?.recipeArray = recipeArray
             self?.recipeTableView.reloadData()
@@ -46,6 +49,7 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         super.viewWillAppear(animated)
         
         //make sure the size of the title is the same every time the table view appears
+        // FIXME: - the size of the title screen will flash when popping detail view controller
         let attrs = [
             NSForegroundColorAttributeName: UIColor.white,
             NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 36)!
@@ -102,7 +106,9 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedRecipe: Recipe = self.recipeArray[indexPath.row]
-        print("selectedRecipe = \(selectedRecipe.title)")
+        
+        //DEBUG CODE
+        //print("selectedRecipe = \(selectedRecipe.title)")
         
         let detailVC: RecipeDetailViewController = RecipeDetailViewController()
         detailVC.shownRecipe = selectedRecipe
