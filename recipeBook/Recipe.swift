@@ -12,10 +12,16 @@ class Recipe: NSObject {
 
     var id: String
     var title: String
+    var rating: String
+    var imageURL: String
+    var instructions: String
     
     override init(){
         self.id = ""
         self.title = ""
+        self.rating = ""
+        self.imageURL = ""
+        self.instructions = ""
     }
     
 }

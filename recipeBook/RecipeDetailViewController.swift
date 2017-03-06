@@ -13,7 +13,9 @@ class RecipeDetailViewController: UIViewController {
     public var shownRecipe: Recipe? = nil
     
     @IBOutlet weak var recipeTitle: UILabel!
-    
+    @IBOutlet weak var recipeImage: UIImageView!
+    @IBOutlet weak var recipeRating: UILabel!
+    @IBOutlet weak var recipeInstructions: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,27 @@ class RecipeDetailViewController: UIViewController {
         if let recipe = self.shownRecipe {
             //set the text
             self.recipeTitle.text = recipe.title
+            
+            if recipe.imageURL != ""{
+                self.recipeRating.text = recipe.rating
+                self.recipeInstructions.text = recipe.instructions
+                
+                
+                
+            } else {
+                
+                let populateRecipeDetailsCompletionHandler: (Recipe) -> Void = {[weak self] (updatedRecipe:Recipe) -> Void  in
+                    //do something here
+                    print("here is my updated Recipe")
+                    
+                    self?.shownRecipe = updatedRecipe
+                    self?.recipeRating.text = self?.shownRecipe?.rating
+                    self?.recipeInstructions.text = self?.shownRecipe?.instructions
+                    
+                }
+                NetworkingManager.populateRecipeDetails(recipe: self.shownRecipe!, completionHandler: populateRecipeDetailsCompletionHandler)
+                
+            }
         }
 
     }
