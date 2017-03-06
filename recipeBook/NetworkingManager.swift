@@ -118,13 +118,10 @@ class NetworkingManager: NSObject {
             if response != nil {
                 do {
                     
-                    print(response)
-                    
                     //JSON response is a single dictionary
                     if let jsonRecipeDetails = try JSONSerialization.jsonObject(with: data!, options: [])as? [String: AnyObject]{
                         
-//                        //populate array of model objects based on JSON response
-//                        let recipeArray: [Recipe] = self.processJsonRequestIntoArrayOfRecipes(jsonArray: jsonArrayOfRecipes)
+                        //convert the JSON dictionary into a recipe object
                         let updatedRecipe: Recipe = self.processJsonRecipeDetails(jsonDict: jsonRecipeDetails)
                             
                         //perform completion handler with the update recipe object
