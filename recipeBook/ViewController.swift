@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         let loadRecipesCompletionHandler: ([Recipe]) -> Void = { (recipeArray:[Recipe]) -> Void  in
             //do something here
             print("here is my completion handler")
+            
+            for recipe in recipeArray{
+                print("currentRecipe.id = \(recipe.id)")
+                print("currentRecipe.title = \(recipe.title)")
+            }
         }
         
         NetworkingManager.loadRecipesWithCompletion(completionHandler:loadRecipesCompletionHandler)

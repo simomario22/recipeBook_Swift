@@ -47,8 +47,13 @@ class NetworkingManager: NSObject {
                 do {
                     
                     //JSON response is an array of dictionaries
-                    if let jsonDict = try JSONSerialization.jsonObject(with: data!, options: [])as? [[String: Any]]{
-                        print(jsonDict)
+                    if let jsonArrayOfRecipes = try JSONSerialization.jsonObject(with: data!, options: [])as? [[String: AnyObject]]{
+                        
+                        //populate array of model objects based on JSON response
+                        let recipeArray: [Recipe] = self.processJsonRequestIntoArrayOfRecipes(jsonArray: jsonArrayOfRecipes)
+                        
+                        //perform completion handler with the array of model objects
+                        completionHandler(recipeArray)
                     }
                     
                 } catch let error as NSError {
@@ -58,6 +63,22 @@ class NetworkingManager: NSObject {
         }
         
         task.resume()
+    }
+
+    
+    static func processJsonRequestIntoArrayOfRecipes(jsonArray: [Dictionary<String, AnyObject>]) -> [Recipe]{
+        
+        var recipeArray: [Recipe] = []
+        
+        for recipeDictionary in jsonArray{
+            let currentRecipe: Recipe = Recipe()
+            currentRecipe.id = recipeDictionary["id"]!.stringValue as String
+            currentRecipe.title = recipeDictionary["title"] as! String
+            recipeArray.append(currentRecipe)
+        }
+
+        
+        return recipeArray
     }
 
 }
