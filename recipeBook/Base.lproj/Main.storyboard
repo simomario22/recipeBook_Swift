@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-678" y="682"/>
+            <point key="canvasLocation" x="-822" y="999"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="ml6-FP-Hou">
@@ -69,11 +69,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Asz-7M-FA4" userLabel="Timer"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="timer_orange_icon.png" id="Asz-7M-FA4" userLabel="Timer"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RsI-Ca-D68" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="346"/>
+            <point key="canvasLocation" x="-810" y="250"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="NUX-ab-Ro9">
@@ -127,13 +127,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQw-Hl-oOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="-696"/>
+            <point key="canvasLocation" x="-31" y="-522"/>
         </scene>
-        <!--Item-->
+        <!--Recipes-->
         <scene sceneID="HPZ-ci-D1k">
             <objects>
                 <navigationController id="Pql-6L-hh0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Cb3-la-o8R"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="recipe_icon.png" id="Cb3-la-o8R"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m8d-Gt-pJu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -147,26 +147,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcz-iR-cYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-798" y="-695"/>
+            <point key="canvasLocation" x="-810" y="-522"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7ae-KX-HHj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v9P-UJ-1Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="XHs-90-KKJ" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7G0-p4-ltQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.60241591490000002" blue="0.042066318300000002" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Pql-6L-hh0" kind="relationship" relationship="viewControllers" id="cSm-ag-wkC"/>
                         <segue destination="Sf0-D5-Fkl" kind="relationship" relationship="viewControllers" id="HaH-he-GJY"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9P-UJ-1Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1583" y="-51"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recipe_icon.png" width="25" height="25"/>
+        <image name="timer_orange_icon.png" width="28" height="29"/>
+    </resources>
     <color key="tintColor" red="1" green="0.60241591494787428" blue="0.042066318295367777" alpha="1" colorSpace="calibratedRGB"/>
 </document>

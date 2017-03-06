@@ -24,6 +24,10 @@
 		1D29B2AE1E6D31BB000B496D /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2AD1E6D31BB000B496D /* logo@3x.png */; };
 		1D29B2B01E6D366F000B496D /* fill_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2AF1E6D366F000B496D /* fill_star.png */; };
 		1D29B2B21E6D3677000B496D /* unfilled_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2B11E6D3677000B496D /* unfilled_star.png */; };
+		1D29B2B51E6D425F000B496D /* recipe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2B41E6D425F000B496D /* recipe_icon.png */; };
+		1D29B2B71E6D426C000B496D /* timer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2B61E6D426C000B496D /* timer_icon.png */; };
+		1D29B2B91E6D4273000B496D /* timer_orange_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2B81E6D4273000B496D /* timer_orange_icon.png */; };
+		1D29B2BB1E6D436D000B496D /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D29B2BA1E6D436D000B496D /* button_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		1D29B2AD1E6D31BB000B496D /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		1D29B2AF1E6D366F000B496D /* fill_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fill_star.png; sourceTree = "<group>"; };
 		1D29B2B11E6D3677000B496D /* unfilled_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unfilled_star.png; sourceTree = "<group>"; };
+		1D29B2B41E6D425F000B496D /* recipe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_icon.png; sourceTree = "<group>"; };
+		1D29B2B61E6D426C000B496D /* timer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_icon.png; sourceTree = "<group>"; };
+		1D29B2B81E6D4273000B496D /* timer_orange_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_orange_icon.png; sourceTree = "<group>"; };
+		1D29B2BA1E6D436D000B496D /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,10 @@
 				1D29B2AD1E6D31BB000B496D /* logo@3x.png */,
 				1D29B2AF1E6D366F000B496D /* fill_star.png */,
 				1D29B2B11E6D3677000B496D /* unfilled_star.png */,
+				1D29B2B41E6D425F000B496D /* recipe_icon.png */,
+				1D29B2B61E6D426C000B496D /* timer_icon.png */,
+				1D29B2B81E6D4273000B496D /* timer_orange_icon.png */,
+				1D29B2BA1E6D436D000B496D /* button_background.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -194,13 +206,17 @@
 			files = (
 				1D29B2B01E6D366F000B496D /* fill_star.png in Resources */,
 				1D1F28C41E6CDC720086E72A /* LaunchScreen.storyboard in Resources */,
+				1D29B2B51E6D425F000B496D /* recipe_icon.png in Resources */,
 				1D29B2B21E6D3677000B496D /* unfilled_star.png in Resources */,
+				1D29B2B91E6D4273000B496D /* timer_orange_icon.png in Resources */,
+				1D29B2BB1E6D436D000B496D /* button_background.png in Resources */,
 				1D29B2AC1E6D31B5000B496D /* logo@2x.png in Resources */,
 				1D29B2AA1E6D319F000B496D /* logo.png in Resources */,
 				1D1F28D91E6CE8630086E72A /* RecipeDetailViewController.xib in Resources */,
 				1D1F28C11E6CDC720086E72A /* Assets.xcassets in Resources */,
 				1D29B2AE1E6D31BB000B496D /* logo@3x.png in Resources */,
 				1D1F28BF1E6CDC720086E72A /* Main.storyboard in Resources */,
+				1D29B2B71E6D426C000B496D /* timer_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
