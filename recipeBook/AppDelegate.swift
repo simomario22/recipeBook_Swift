@@ -21,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainViewController: RecipeListViewController = storyBoard.instantiateViewController(withIdentifier: "RecipeListViewControllerID") as! RecipeListViewController
         
         mainViewController.navigationItem.title = "Recipes"
-        
         let navigationController: UINavigationController = UINavigationController.init(rootViewController: mainViewController)
+        navigationController.navigationBar.backgroundColor = UIColor.orange
+        navigationController.navigationBar.tintColor = UIColor.orange
+
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
