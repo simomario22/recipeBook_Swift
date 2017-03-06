@@ -76,6 +76,11 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         
         let recipeLabel: UILabel = cell.viewWithTag(99) as! UILabel
         recipeLabel.text = recipeArray[indexPath.row].title
+
+        //styling for text in each row
+        recipeLabel.font = UIFont(name: "AvenirNextCondensed-Regular", size: 18)!
+        recipeLabel.textColor = UIColor.black
+        
         
         return cell
     }
